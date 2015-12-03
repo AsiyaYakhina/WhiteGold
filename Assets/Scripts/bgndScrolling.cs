@@ -10,7 +10,7 @@ public class bgndScrolling : MonoBehaviour {
 		print ("stillCOlliding"); 
 		if (col.gameObject.tag == "BgndCollider") {
 			print ("REACHED THE POINT");
-			transform.Translate (new Vector2 (58.32f, 0f));
+			transform.Translate (new Vector2 (43.73f, 0f));
 		} else if (col.gameObject.tag == "Cotton") {
 			print ("collidingWCotton");
 			Destroy(col.gameObject);
