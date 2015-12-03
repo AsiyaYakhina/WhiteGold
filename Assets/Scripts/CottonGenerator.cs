@@ -14,18 +14,12 @@ public class CottonGenerator : MonoBehaviour {
 	public GameObject cottonPiece8;
 	public Vector2 cottonPosRandom;
 //
-	
-	public int yMax = 12;
-	public int yMin = -13;
-	public int yMid;
+	public float yMin = -2.89f;
+	public float yMax = 2.89f;
 
-	public int xMin = 24;
-	public int xMax = 46;
-	public int xMid;
 
-	public int topOrBot;
- 	
-	
+
+
 	public int timer; //based on level
 	private int maxTimer;
 	public static int visibleCounter = 0; //current # of cottons visible
@@ -46,33 +40,30 @@ public class CottonGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		createRandomCotton ();
-
-		print ("timer = " + timer.ToString ());
-		print ("visibleCounter = " + visibleCounter.ToString ());
+		//print ("timer = " + timer.ToString ());
+	//	print ("visibleCounter = " + visibleCounter.ToString ());
 
 		 if (timer == 0) {  //time to put a cotton there
 			timer = maxTimer;
 			if (visibleCounter < maxCounter) {
-				createRandomCotton();
+				//createRandomCotton();
 				visibleCounter = visibleCounter + 1;
-				print ("Created one! (hopefully)");
+			//	print ("Created one! (hopefully)");
 			}
 		} else {
 			timer = timer - 1;
 		}
 	}
 
-	int RandomRangeExcept(int mn, int mx){
-		return Random.Range (mn, mx);
-	}
+
 
 	void createRandomCotton () {
-		int randomNumY = RandomRangeExcept (yMin, yMax);
+		float randomNumY = Random.Range(-2.7f, 2.7f);
+		//print ("randomY is "+randomNumY.ToString());
 
 		Vector2 cottonPosRandom = new Vector2 (transform.position.x, randomNumY);
 
-		int randomNum = Random.Range (1,4);
+		int randomNum = Random.Range (1,9);
 
 //
 		if (randomNum == 1) {
@@ -81,26 +72,17 @@ public class CottonGenerator : MonoBehaviour {
 			Instantiate (cottonPiece2, cottonPosRandom, transform.rotation);
 		} else if (randomNum == 3) {
 			Instantiate (cottonPiece3, cottonPosRandom, transform.rotation);
-//		} else if (randomNum == 4) {
-//			Instantiate (cottonPiece4, cottonPosRandom, transform.rotation);
-//		} else if (randomNum == 5) {
-//			Instantiate (cottonPiece5, cottonPosRandom, transform.rotation);
-//		} else if (randomNum == 6) {
-//			Instantiate (cottonPiece6, cottonPosRandom, transform.rotation);
-//		} else if (randomNum == 7) {
-//			Instantiate (cottonPiece7, cottonPosRandom, transform.rotation);
-//		} else if (randomNum == 8) {
-//			Instantiate (cottonPiece8, cottonPosRandom, transform.rotation);
-//		}
+		} else if (randomNum == 4) {
+			Instantiate (cottonPiece4, cottonPosRandom, transform.rotation);
+		} else if (randomNum == 5) {
+			Instantiate (cottonPiece5, cottonPosRandom, transform.rotation);
+		} else if (randomNum == 6) {
+			Instantiate (cottonPiece6, cottonPosRandom, transform.rotation);
+		} else if (randomNum == 7) {
+			Instantiate (cottonPiece7, cottonPosRandom, transform.rotation);
+		} else if (randomNum == 8) {
+			Instantiate (cottonPiece8, cottonPosRandom, transform.rotation);
+		}
 //
 	}
-	
-//	IEnumerator CreateCotton() {
-//		yield return new WaitForSeconds (3.0f);
-//		Debug.Log ("waited for 3 s");
-//
-//}
-
-
-}
 }
