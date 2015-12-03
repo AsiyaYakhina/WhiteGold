@@ -32,7 +32,7 @@ public class CottonGenerator : MonoBehaviour {
 	void Start () {
 
 		// based on level adjust "timer" and "maxCounter"
-		maxTimer = 6;
+		maxTimer = 3;
 		timer = maxTimer;
 		visibleCounter = 0;
 		maxCounter = 30;
