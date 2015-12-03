@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\CameraFit.cs" />
      <Compile Include="Assets\Scripts\CottonGenerator.cs" />
      <Compile Include="Assets\Scripts\bgndScrolling.cs" />
+     <Compile Include="Assets\Scripts\cottonCollider.cs" />
      <Compile Include="Assets\Scripts\cottonPicker.cs" />
      <Compile Include="Assets\Scripts\scrolling.cs" />
  <Reference Include="UnityEngine.Networking">

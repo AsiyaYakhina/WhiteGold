@@ -32,10 +32,10 @@ public class CottonGenerator : MonoBehaviour {
 	void Start () {
 
 		// based on level adjust "timer" and "maxCounter"
-		maxTimer = 10;
+		maxTimer = 6;
 		timer = maxTimer;
 		visibleCounter = 0;
-		maxCounter = 10;
+		maxCounter = 30;
 	}
 	
 	// Update is called once per frame
@@ -46,7 +46,7 @@ public class CottonGenerator : MonoBehaviour {
 		 if (timer == 0) {  //time to put a cotton there
 			timer = maxTimer;
 			if (visibleCounter < maxCounter) {
-				//createRandomCotton();
+				createRandomCotton();
 				visibleCounter = visibleCounter + 1;
 			//	print ("Created one! (hopefully)");
 			}
@@ -83,6 +83,6 @@ public class CottonGenerator : MonoBehaviour {
 		} else if (randomNum == 8) {
 			Instantiate (cottonPiece8, cottonPosRandom, transform.rotation);
 		}
-//
+
 	}
 }
