@@ -7,10 +7,10 @@ public class bgndScrolling : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D col) {
-
 		print ("stillCOlliding"); 
 		if (col.gameObject.tag == "BgndCollider") {
 			print ("REACHED THE POINT");
+			transform.Translate(new Vector2(58.32f,0f));
 		}
 	}
 
