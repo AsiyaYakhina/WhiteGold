@@ -10,8 +10,14 @@ public class scrolling : MonoBehaviour {
 	}
 	
 	void Update() {
-		transform.Translate(new Vector2 (-1,0)*speed*Time.deltaTime);
+		int ifAlive = cottonPicker.seeIfDead ();
+		if (ifAlive == 1) {
+			transform.Translate (new Vector2 (-1, 0) * speed * Time.deltaTime);
+		} else {
+		// do nothing
+		}
 	}
+
 	
 }
 

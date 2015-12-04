@@ -50,7 +50,11 @@
      <Compile Include="Assets\Scripts\bgndScrolling.cs" />
      <Compile Include="Assets\Scripts\cottonCollider.cs" />
      <Compile Include="Assets\Scripts\cottonPicker.cs" />
+     <Compile Include="Assets\Scripts\scoreTracker.cs" />
      <Compile Include="Assets\Scripts\scrolling.cs" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>/Users/asiyayakhina/WhiteGold/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
