@@ -35,7 +35,7 @@ public class CottonGenerator : MonoBehaviour {
 		maxTimer = 3;
 		timer = maxTimer;
 		visibleCounter = 0;
-		maxCounter = 30;
+		maxCounter = 50;
 	}
 	
 	// Update is called once per frame
