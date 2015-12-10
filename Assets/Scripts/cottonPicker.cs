@@ -12,6 +12,8 @@ public class cottonPicker : MonoBehaviour {
 		st = GameObject.FindGameObjectWithTag("ScoreTracker").GetComponent<scoreTracker>();
 	}
 
+
+
 	void OnTriggerEnter2D(Collider2D col) {
 		if (col.gameObject.tag == "Cotton") {
 			CottonGenerator.reduceCoutner ();
@@ -24,6 +26,7 @@ public class cottonPicker : MonoBehaviour {
 			print ("BOOM - GONE");
 			Destroy (this.gameObject);
 			liveDie = 0;
+			//Application.LoadLevel("replay");
 			Debug.Log ("cotton picker trigger");
 			
 		
@@ -35,6 +38,10 @@ public class cottonPicker : MonoBehaviour {
 
 	public static int seeIfDead() {
 		return liveDie;
+	}
+
+	public static void replay() {
+		Application.LoadLevel("cottonPicking"); 
 	}
 
 }

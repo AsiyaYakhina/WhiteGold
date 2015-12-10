@@ -1,14 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/cottonPicker.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CottonGenerator.cs">
     <Files>
-      <File FileName="Assets/Scripts/bgndScrolling.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/scrolling.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/cottonPicker.cs" Line="20" Column="27" />
-      <File FileName="Assets/Scripts/CottonGenerator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/cottonCollider.cs" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets/followTouch.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/scoreTracker.cs" Line="8" Column="8" />
+      <File FileName="Assets/Scripts/cottonPicker.cs" Line="29" Column="6" />
+      <File FileName="Assets/Scripts/scoreTracker.cs" Line="1" Column="1" />
+      <File FileName="Assets/PlayAgain.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CottonGenerator.cs" Line="7" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -41,17 +41,20 @@ public class CottonGenerator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//print ("timer = " + timer.ToString ());
-	//	print ("visibleCounter = " + visibleCounter.ToString ());
-
-		 if (timer == 0) {  //time to put a cotton there
-			timer = maxTimer;
-			if (visibleCounter < maxCounter) {
-				createRandomCotton();
-				visibleCounter = visibleCounter + 1;
-			//	print ("Created one! (hopefully)");
+		//	print ("visibleCounter = " + visibleCounter.ToString ());
+		int ifAlive = cottonPicker.seeIfDead ();
+		if (ifAlive == 1) {
+		
+			if (timer == 0) {  //time to put a cotton there
+				timer = maxTimer;
+				if (visibleCounter < maxCounter) {
+					createRandomCotton ();
+					visibleCounter = visibleCounter + 1;
+					//	print ("Created one! (hopefully)");
+				}
+			} else {
+				timer = timer - 1;
 			}
-		} else {
-			timer = timer - 1;
 		}
 	}
 
