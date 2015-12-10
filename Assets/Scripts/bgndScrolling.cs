@@ -4,6 +4,7 @@ using System.Collections;
 public class bgndScrolling : MonoBehaviour {
 	
 	public float speed = 0.2f;
+	private int ifAlive;
 
 
 	void OnTriggerEnter2D(Collider2D col) {
@@ -18,9 +19,13 @@ public class bgndScrolling : MonoBehaviour {
 		}
 	}
 
+	void Start () {
+		ifAlive = 1;
+	}
+
 
 	void Update() {
-		int ifAlive = cottonPicker.seeIfDead ();
+		ifAlive = cottonPicker.seeIfDead ();
 		if (ifAlive == 1) {
 			transform.Translate (new Vector2 (-1, 0) * speed * Time.deltaTime);
 		} else {

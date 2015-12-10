@@ -4,17 +4,22 @@ using UnityEngine.UI;
 
 public class scoreTracker : MonoBehaviour {
 
+
 	public float score;
-	public Text finalScoreText;
 	public Text scoreText;
 
+	void Awake() {
+		score = 0;
+	}
+
 	void Start () {
-		finalScoreText.text = "Collected amount";
+		score = PlayerPrefs.GetFloat("currentScore");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		scoreText.text = score.ToString() + " g";
-		finalScoreText.text = "Collected amount: " + score.ToString() +" g";
+		PlayerPrefs.SetFloat("currentScore", score); 
+
 	}
 }

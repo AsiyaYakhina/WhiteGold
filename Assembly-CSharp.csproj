@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\cottonCollider.cs" />
      <Compile Include="Assets\Scripts\cottonPicker.cs" />
      <Compile Include="Assets\Scripts\scoreTracker.cs" />
+     <Compile Include="Assets\Scripts\scoreTransferer.cs" />
      <Compile Include="Assets\Scripts\scrolling.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/asiyayakhina/WhiteGold/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>

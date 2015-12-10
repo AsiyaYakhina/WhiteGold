@@ -1,11 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CottonGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/scoreTransferer.cs">
     <Files>
-      <File FileName="Assets/Scripts/cottonPicker.cs" Line="29" Column="6" />
-      <File FileName="Assets/Scripts/scoreTracker.cs" Line="1" Column="1" />
-      <File FileName="Assets/PlayAgain.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CottonGenerator.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/scoreTransferer.cs" Line="15" Column="60" />
+      <File FileName="Assets/Scripts/scoreTracker.cs" Line="16" Column="47" />
+      <File FileName="Assets/Scripts/cottonPicker.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
