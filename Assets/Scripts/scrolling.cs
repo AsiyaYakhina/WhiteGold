@@ -11,11 +11,16 @@ public class scrolling : MonoBehaviour {
 	
 	void Update() {
 		int ifAlive = cottonPicker.seeIfDead ();
-		if (ifAlive == 1) {
+		if (gameManager.stateOFTheGame == "pick" && ifAlive==1) {
 			transform.Translate (new Vector2 (-1, 0) * speed * Time.deltaTime);
-		} else {
-		// do nothing
 		}
+//		
+//		int ifPicks = scoreTracker.IsQuotaPicked ();
+//		if (ifAlive == 1 && ifPicks ==0) {
+//			transform.Translate (new Vector2 (-1, 0) * speed * Time.deltaTime);
+//		} else {
+//		// do nothing
+//		}
 	}
 
 	

@@ -45,16 +45,19 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayAgain.cs" />
      <Compile Include="Assets\Scripts\CameraFit.cs" />
      <Compile Include="Assets\Scripts\CottonGenerator.cs" />
+     <Compile Include="Assets\Scripts\PlayAgain.cs" />
      <Compile Include="Assets\Scripts\bgndScrolling.cs" />
+     <Compile Include="Assets\Scripts\controlEnabler.cs" />
      <Compile Include="Assets\Scripts\cottonCollector.cs" />
      <Compile Include="Assets\Scripts\cottonCollider.cs" />
      <Compile Include="Assets\Scripts\cottonPicker.cs" />
+     <Compile Include="Assets\Scripts\gameManager.cs" />
      <Compile Include="Assets\Scripts\scoreTracker.cs" />
      <Compile Include="Assets\Scripts\scoreTransferer.cs" />
      <Compile Include="Assets\Scripts\scrolling.cs" />
+     <Compile Include="Assets\winAnimManager.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/asiyayakhina/WhiteGold/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

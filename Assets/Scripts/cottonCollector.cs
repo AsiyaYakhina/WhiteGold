@@ -12,25 +12,28 @@ public class cottonCollector : MonoBehaviour {
 	public GameObject cottonPiece6;
 	public GameObject cottonPiece7;
 	public GameObject cottonPiece8;
-	public Vector2 cottonPosRandom;
+	public Vector3 cottonPosRandom;
 	//
-	public float yMin = 5.34f;
-	public float yMax = 7.92f;
-	public float xMin = -6.12f;
-	public float xMax = -3.55f;
+	private float yMin = 5.34f;
+	private float yMax = 7.92f;
+	private float xMin = -6.12f;
+	private float xMax = -3.55f;
+	private float zVal = -20f;
 
 	public int times = 10;
 
+	private int scoreBoardTimer;
+	private int maxTimer;
 
 	// Use this for initialization
 	void Start () {
-
+		maxTimer = 80;
+		scoreBoardTimer = maxTimer;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		dropCotton ();
-	
 	}
 
 
@@ -40,7 +43,7 @@ public class cottonCollector : MonoBehaviour {
 			float randomNumY = Random.Range (yMin, yMax);
 			//print ("randomY is "+randomNumY.ToString());
 		
-			Vector2 cottonPosRandom = new Vector2 (randomNumX, randomNumY);
+			Vector3 cottonPosRandom = new Vector3 (randomNumX, randomNumY, zVal);
 		
 			int randomNum = Random.Range (1, 9);
 		

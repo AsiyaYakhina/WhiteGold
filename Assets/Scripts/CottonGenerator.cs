@@ -43,7 +43,8 @@ public class CottonGenerator : MonoBehaviour {
 		//print ("timer = " + timer.ToString ());
 		//	print ("visibleCounter = " + visibleCounter.ToString ());
 		int ifAlive = cottonPicker.seeIfDead ();
-		if (ifAlive == 1) {
+		if (ifAlive == 1 && gameManager.stateOFTheGame=="pick") {
+
 		
 			if (timer == 0) {  //time to put a cotton there
 				timer = maxTimer;

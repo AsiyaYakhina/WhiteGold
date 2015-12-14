@@ -1,10 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/scoreTransferer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/gameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/scoreTransferer.cs" Line="15" Column="60" />
-      <File FileName="Assets/Scripts/scoreTracker.cs" Line="16" Column="47" />
-      <File FileName="Assets/Scripts/cottonPicker.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/cottonPicker.cs" Line="27" Column="5" />
+      <File FileName="Assets/Scripts/cottonCollider.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CottonGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayAgain.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/bgndScrolling.cs" Line="34" Column="34" />
+      <File FileName="Assets/Scripts/gameManager.cs" Line="111" Column="42" />
+      <File FileName="Assets/Scripts/cottonCollector.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/scoreTracker.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/scrolling.cs" Line="14" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

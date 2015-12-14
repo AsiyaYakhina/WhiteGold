@@ -6,11 +6,11 @@ public class scoreTransferer : MonoBehaviour {
 	
 
 	public Text currentScoreText;
-	private float currentScore;
+	private int currentScore;
 
 	// Use this for initialization
 	void Start () {
-		currentScore = PlayerPrefs.GetFloat("currentScore");
+		currentScore = PlayerPrefs.GetInt("currentScore");
 		//print(currentScore.ToString);
 		currentScoreText.text = "score: "+currentScore.ToString();
 
