@@ -8,6 +8,8 @@ public class gameManager : MonoBehaviour {
 	public GameObject winAnimation;
 	public GameObject scoreBoard;
 
+	public int scoreBoardCounter;
+
 	public GameObject player;
 
 	public Text scoreOnWin;
@@ -23,6 +25,23 @@ public class gameManager : MonoBehaviour {
 
 	private int animationInScene;
 	private int scoreboardInScene;
+
+	public GameObject stud1;
+	public GameObject stud2;
+	public GameObject stud3;
+	public GameObject stud4;
+	public GameObject stud5;
+	public GameObject stud6;
+	public GameObject stud7;
+	public GameObject stud8;
+	public GameObject stud9;
+	public GameObject stud10;
+	public GameObject stud11;
+	public GameObject stud12;
+	public GameObject stud13;
+	public GameObject stud14;
+	public GameObject stud15;
+	public GameObject stud16;
 
 	public GameObject cottonPiece1;
 	public GameObject cottonPiece2;
@@ -43,14 +62,17 @@ public class gameManager : MonoBehaviour {
 	private int times = 10;
 
 	public static string stateOFTheGame = "pick"; // possible states: "pick", "win", "score"
+	private GameObject pickScene;
 
 	// Use this for initialization
 	void Start () {
+		scoreBoardCounter = 0;
 		//print ("START gameManager");
 //		st = GameObject.FindGameObjectWithTag("ScoreTracker").GetComponent<scoreTracker>();
-
+		pickScene = GameObject.Find("pickScene"); 
+		
 		Vector3 winAnimPosition = new Vector3 (-0.81f, 0, -1);
-		Vector3 scoreBoardPosition = new Vector3 (4.05f, -0.87f, -1.44f);
+		Vector3 scoreBoardPosition = new Vector3 (3.53f, -0.52f, 5f);
 		maxWinTimer = 120;
 		winTimer = maxWinTimer;
 
@@ -59,6 +81,23 @@ public class gameManager : MonoBehaviour {
 
 		animationInScene = 0; // no animation in scene in the beginning
 		scoreboardInScene = 0;
+
+		stud1.transform.localScale = new Vector3(0, 0, 0);
+		stud2.transform.localScale = new Vector3(0, 0, 0);
+		stud3.transform.localScale = new Vector3(0, 0, 0);
+		stud4.transform.localScale = new Vector3(0, 0, 0);
+		stud5.transform.localScale = new Vector3(0, 0, 0);
+		stud6.transform.localScale = new Vector3(0, 0, 0);
+		stud7.transform.localScale = new Vector3(0, 0, 0);
+		stud8.transform.localScale = new Vector3(0, 0, 0);
+		stud9.transform.localScale = new Vector3(0, 0, 0);
+		stud10.transform.localScale = new Vector3(0, 0, 0);
+		stud11.transform.localScale = new Vector3(0, 0, 0);
+		stud12.transform.localScale = new Vector3(0, 0, 0);
+		stud13.transform.localScale = new Vector3(0, 0, 0);
+		stud14.transform.localScale = new Vector3(0, 0, 0);
+		stud15.transform.localScale = new Vector3(0, 0, 0);
+		stud16.transform.localScale = new Vector3(0, 0, 0);
 	
 	}
 	
@@ -71,7 +110,8 @@ public class gameManager : MonoBehaviour {
 
 
 		} else if (stateOFTheGame == "win") {
-			player.GetComponent<followTouch> ().enabled = false;
+			pickScene.transform.position = new Vector3 (0,-17,0);
+		//	player.GetComponent<followTouch> ().enabled = false;
 			scoreOnWin.text = "amount :" + scoreTracker.score.ToString ();
 			scoreOnWin.enabled = true;
 			print ("stateOfTheGame " + stateOFTheGame);
@@ -89,8 +129,9 @@ public class gameManager : MonoBehaviour {
 
 
 		} else if (stateOFTheGame == "score") {
+			pickScene.transform.position = new Vector3 (0,-17,0);
 			scoreOnWin.enabled = false;
-			player.GetComponent<followTouch> ().enabled = false;
+			//player.GetComponent<followTouch> ().enabled = false;
 			showScoreBoard ();
 			dropCotton (); 
 		
@@ -98,13 +139,12 @@ public class gameManager : MonoBehaviour {
 				scoreBoardTimer = maxScoreBoardTimer;
 				hideScoreBoard ();
 
-				print ("stateOfTheGame " + stateOFTheGame);
+				print ("stateOfTheGameInZero " + stateOFTheGame);
 				scoreTracker.score = scoreTracker.score + 1;
 				//	print (scoreTracker.checkIfBigPick().ToString());
 			
 				//	print ("newScore" + scoreTracker.score.ToString ());
 				stateOFTheGame = "pick";
-				print ("gameState " +stateOFTheGame);
 			} else {
 				scoreBoardTimer = scoreBoardTimer - 1;
 				print ("scoreBoardTimer "+ scoreBoardTimer);
@@ -112,10 +152,11 @@ public class gameManager : MonoBehaviour {
 			}
 		
 	} else if (stateOFTheGame == "pick") {
+			pickScene.transform.position = new Vector3 (0,0,0);
 			times = 10;
 			player.transform.position = new Vector3 (-3.83f, 0.94f, 0f);
 			scoreOnWin.enabled = false;
-			player.GetComponent<followTouch>().enabled = true;
+		//	player.GetComponent<followTouch>().enabled = true;
 
 		}
 	}
@@ -137,15 +178,54 @@ public class gameManager : MonoBehaviour {
 
 	void showScoreBoard() {
 		if (scoreboardInScene == 0) {
-			scoreBoard.transform.position = new Vector3 (3.56f, -0.51f, -1.44f);
 			scoreboardInScene = 1;
+			scoreBoard.transform.position = new Vector3 (3.53f, -0.52f, -1.44f);
+			placeKid();
+
 		}
 	}
 
 	void hideScoreBoard() {
 		if (scoreboardInScene == 1) {
-			scoreBoard.transform.position = new Vector3(0, 0, 2);
+			scoreBoard.transform.position = new Vector3(0, 9, 2);
 			scoreboardInScene = 0;
+			scoreBoardCounter= scoreBoardCounter+1;
+		}
+	}
+
+	void placeKid () {
+		if (scoreBoardCounter == 0) {
+			stud1.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 1) {
+			stud2.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 2) {
+			stud3.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 3) {
+			stud4.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 4) {
+			stud5.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 5) {
+			stud6.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 6) {
+			stud7.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 7) {
+			stud8.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 8) {
+			stud9.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 9) {
+			stud10.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 10) {
+			stud11.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 11) {
+			stud12.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 12) {
+			stud13.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 13) {
+			stud14.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 14) {
+			stud15.transform.localScale = new Vector3 (1, 1, 1);
+		} else if (scoreBoardCounter == 15) {
+			stud16.transform.localScale = new Vector3 (1, 1, 1);
 		}
 	}
 

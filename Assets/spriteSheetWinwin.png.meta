@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 547c8578fca514429a51f228656a4e3c
-timeCreated: 1449962775
+timeCreated: 1450157556
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,7 @@ TextureImporter:
     21300010: spriteSheetWinwin_5
     21300012: spriteSheetWinwin_6
     21300014: spriteSheetWinwin_7
+    21300016: spriteSheetWinwin_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,82 +62,92 @@ TextureImporter:
     - name: spriteSheetWinwin_0
       rect:
         serializedVersion: 2
-        x: 211
-        y: 2414
-        width: 2034
-        height: 934
+        x: 206
+        y: 2817
+        width: 2030
+        height: 1247
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spriteSheetWinwin_1
       rect:
         serializedVersion: 2
-        x: 2388
-        y: 2450
-        width: 2033
-        height: 931
+        x: 2409
+        y: 2817
+        width: 2030
+        height: 1247
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spriteSheetWinwin_2
       rect:
         serializedVersion: 2
-        x: 4545
-        y: 2414
-        width: 2033
-        height: 934
+        x: 4645
+        y: 2817
+        width: 2030
+        height: 1247
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spriteSheetWinwin_3
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1327
-        width: 2034
-        height: 934
+        x: 206
+        y: 1490
+        width: 2030
+        height: 1251
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spriteSheetWinwin_4
       rect:
         serializedVersion: 2
-        x: 2381
-        y: 1327
-        width: 2034
-        height: 934
+        x: 2409
+        y: 1490
+        width: 2030
+        height: 1251
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spriteSheetWinwin_5
       rect:
         serializedVersion: 2
-        x: 4516
-        y: 1327
+        x: 4645
+        y: 1490
         width: 2030
-        height: 934
+        height: 1251
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spriteSheetWinwin_6
       rect:
         serializedVersion: 2
-        x: 211
-        y: 202
-        width: 2034
-        height: 934
+        x: 206
+        y: 166
+        width: 2030
+        height: 1247
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spriteSheetWinwin_7
       rect:
         serializedVersion: 2
-        x: 2388
-        y: 202
-        width: 2033
-        height: 934
+        x: 2409
+        y: 166
+        width: 2030
+        height: 1247
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spriteSheetWinwin_8
+      rect:
+        serializedVersion: 2
+        x: 4645
+        y: 166
+        width: 2030
+        height: 1247
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
