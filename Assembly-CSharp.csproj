@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\cottonCollider.cs" />
      <Compile Include="Assets\Scripts\cottonPicker.cs" />
      <Compile Include="Assets\Scripts\gameManager.cs" />
+     <Compile Include="Assets\Scripts\rotation.cs" />
      <Compile Include="Assets\Scripts\scoreTracker.cs" />
      <Compile Include="Assets\Scripts\scoreTransferer.cs" />
      <Compile Include="Assets\Scripts\scrolling.cs" />

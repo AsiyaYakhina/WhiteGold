@@ -112,7 +112,7 @@ public class gameManager : MonoBehaviour {
 		} else if (stateOFTheGame == "win") {
 			pickScene.transform.position = new Vector3 (0,-17,0);
 		//	player.GetComponent<followTouch> ().enabled = false;
-			scoreOnWin.text = "amount :" + scoreTracker.score.ToString ();
+			scoreOnWin.text = scoreTracker.score.ToString()+ " kg";
 			scoreOnWin.enabled = true;
 			print ("stateOfTheGame " + stateOFTheGame);
 			createWinAnimation ();
